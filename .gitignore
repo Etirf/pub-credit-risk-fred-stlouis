@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.pkl
+*.parquet
+*.log
+*.json
+.env
+storage/
+logs/
+.venv/
+*.zip

@@ -1,0 +1,37 @@
+[project]
+name = "pub-credit-risk-fred-stlouis"
+version = "0.1.0"
+description = "Domain-driven credit risk modeling service with FastAPI, scikit-learn, and FRED-based macroeconomic integration."
+readme = "README.md"
+requires-python = ">=3.13"
+license = "MIT"
+authors = [{ name = "Streyzen", email = "streyzen@gmail.com" }]
+keywords = ["ml", "fastapi", "credit-risk", "ddd"]
+dependencies = [
+    "celery>=5.4.0",
+    "faker>=37.12.0",
+    "fastapi>=0.121.1",
+    "fastparquet>=2024.11.0",
+    "fredapi>=0.5.2",
+    "httpx>=0.28.1",
+    "joblib>=1.5.2",
+    "numpy>=2.3.4",
+    "pandas>=2.3.3",
+    "pydantic-settings>=2.12.0",
+    "psycopg2-binary>=2.9.10",
+    "redis>=5.2.0",
+    "scikit-learn>=1.7.2",
+    "sqlalchemy>=2.0.36",
+    "uvicorn>=0.38.0",
+    # optional but recommended:
+    "pyarrow>=17.0.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.0",
+    "ruff>=0.6.0"
+]
+
+[tool.ruff]
+ignore = ["F403"]  # Allow wildcard imports in __init__.py files
